@@ -23,7 +23,7 @@ def main():
             print(f"Received from {client_address}: {message.decode()}")
 
             #prepare response by appending a humorous message to original message
-            response_message = message.decode() + " - Here’s a joke: Why don't skeletons fight each other? They don't have the guts."
+            response_message = message.decode() + " - Where do cats get their information? The MEWS!!"
             #send the response back to the client
             server_socket.sendto(response_message.encode(), client_address)
     except KeyboardInterrupt:
